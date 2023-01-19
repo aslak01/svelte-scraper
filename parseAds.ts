@@ -1,7 +1,7 @@
 import {
   readJSON,
-  removeFile,
   writeJSON,
+  // removeFile,
 } from "https://deno.land/x/flat@0.0.15/mod.ts";
 
 import * as R from "https://deno.land/x/ramda@v0.27.2/mod.ts";
