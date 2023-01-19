@@ -15,6 +15,6 @@ export const postToWebhook = async (ad: FinnAd, webhookUrl: string) => {
 };
 
 const adToMsg = (ad: FinnAd) => {
-  return "*" + ad.company_name + "* ser etter en " + ad.job_title + " i " +
-    ad.location + ".\n" + ad.ad_link;
+  return "**" + ad.company_name + "** i " + ad.location + ": *" + ad.job_title +
+    "* \n" + ad.ad_link;
 };
