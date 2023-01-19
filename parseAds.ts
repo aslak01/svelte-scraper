@@ -17,7 +17,7 @@ const configData = await loadEnv({
   allowEmptyValues: true,
 });
 
-const WEEBHOOK = Deno.env.get("WEBHOOK_URL");
+const WEEBHOOK = configData.WEBHOOK_URL;
 
 // The filename is the first invocation argument
 const inputFile = Deno.args[0];

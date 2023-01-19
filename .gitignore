@@ -1,1 +1,3 @@
 deno.json
+.env
+*.bak
