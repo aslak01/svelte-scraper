@@ -28,4 +28,4 @@ jobs:
         with:
           http_url: https://www.finn.no/api/search-qf?q=svelte&searchkey=SEARCH_ID_JOB_FULLTIME&vertical=bap
           downloaded_filename: finn_svelte_job_data.json
-          postprocess: parseAds.ts
+          postprocess: parseAds.ts $WEBHOOK_URL
