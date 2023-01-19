@@ -2,6 +2,8 @@ import type { FinnAd } from "./types.ts";
 
 import { postToWebhook } from "./functions.ts";
 
+import { config as loadEnv } from "https://deno.land/std/dotenv/mod.ts";
+
 import {
   readJSON,
   writeJSON,
@@ -10,8 +12,12 @@ import {
 
 import * as R from "https://x.nest.land/ramda@0.27.2/mod.ts";
 
-const WEEBHOOK =
-  "https://discord.com/api/webhooks/1065723386514391050/j5ElyHMIO-rUJRHfNJ1OQg_kPb4lesyy4p7aD3p5JMjt9dhgcOB3NFB6rlbMnZypEOUa";
+const configData = await loadEnv({
+  export: true,
+  allowEmptyValues: true,
+});
+
+const WEEBHOOK = Deno.env.get("WEBHOOK_URL");
 
 // The filename is the first invocation argument
 const inputFile = Deno.args[0];
