@@ -17,12 +17,17 @@ const configData = await loadEnv({
   allowEmptyValues: true,
 });
 
-const WEEBHOOK = configData.WEBHOOK_URL;
+let WEEBHOOK = "";
+let inputFile;
 
-console.log("hook", WEEBHOOK);
-
-// The filename is the first invocation argument
-const inputFile = Deno.args[0];
+if (Deno.args[1]) {
+  // running on github with webhook passed as param from actions
+  WEEBHOOK = Deno.args[0];
+  inputFile = Deno.args[1];
+} else {
+  WEEBHOOK = configData.WEBHOOK_URL;
+  inputFile = Deno.args[0];
+}
 
 const outputFile = `filtered_${inputFile}`;
 const inputData = await readJSON(inputFile);
