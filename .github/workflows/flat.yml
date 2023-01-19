@@ -8,9 +8,6 @@ on:
   schedule:
     - cron: '*/30 * * * *'
 
-env:
-  WEBHOOK_URL: ${secrets.WEBHOOK_URL}
-
 jobs:
   scheduled:
     runs-on: ubuntu-latest
@@ -26,6 +23,8 @@ jobs:
       # The Flat Action step. We fetch the data in the http_url and save it as downloaded_filename
       - name: Fetch data
         uses: githubocto/flat@v3
+        env: 
+          WEBHOOK_URL: ${secrets.WEBHOOK_URL}
         with:
           http_url: https://www.finn.no/api/search-qf?q=svelte&searchkey=SEARCH_ID_JOB_FULLTIME&vertical=bap
           downloaded_filename: finn_svelte_job_data.json
