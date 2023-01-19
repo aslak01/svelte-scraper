@@ -24,7 +24,7 @@ jobs:
       - name: Fetch data
         uses: githubocto/flat@v3
         env: 
-          WEBHOOK_URL: ${secrets.WEBHOOK_URL}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         with:
           http_url: https://www.finn.no/api/search-qf?q=svelte&searchkey=SEARCH_ID_JOB_FULLTIME&vertical=bap
           downloaded_filename: finn_svelte_job_data.json
