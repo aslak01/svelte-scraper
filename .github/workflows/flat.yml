@@ -8,6 +8,9 @@ on:
   schedule:
     - cron: '*/30 * * * *'
 
+env:
+  WEBHOOK_URL: ${secrets.WEBHOOK_URL}
+
 jobs:
   scheduled:
     runs-on: ubuntu-latest

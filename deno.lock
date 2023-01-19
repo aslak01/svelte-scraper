@@ -4,6 +4,8 @@
     "https://cdn.deno.land/mimetypes/versions/v1.0.0/raw/mod.ts": "abd1ea614b32cfa7fd50b46f6e070617696664698b8a34935dc807f3035ad408",
     "https://cdn.deno.land/mimetypes/versions/v1.0.0/raw/src/mime.ts": "7cd7590eae6127dc1abfe710900fc749e94d5c715ffe8a148e59fe20ee21a9a5",
     "https://cdn.deno.land/url_parse/versions/1.0.0/raw/mod.ts": "f27f0d045343a4aff05c7560e285aa3f42e23096bfe0211dc549345f9a5feb94",
+    "https://deno.land/std@0.167.0/dotenv/mod.ts": "9846f28b263c0c793345d74939f69bf34b46446aa2450e070c10a2140064165a",
+    "https://deno.land/std@0.167.0/dotenv/util.ts": "6cc392f087577a26a27f0463f77cc0c31a390aa055917099935b36eb2454592d",
     "https://deno.land/std@0.173.0/_util/asserts.ts": "178dfc49a464aee693a7e285567b3d0b555dc805ff490505a8aae34f9cfb1462",
     "https://deno.land/std@0.173.0/_util/os.ts": "d932f56d41e4f6a6093d56044e29ce637f8dcc43c5a90af43504a889cf1775e3",
     "https://deno.land/std@0.173.0/fs/_util.ts": "65381f341af1ff7f40198cee15c20f59951ac26e51ddc651c5293e24f9ce6f32",
