@@ -19,7 +19,7 @@ const configData = await loadEnv({
 
 const WEEBHOOK = configData.WEBHOOK_URL;
 
-console.log(WEEBHOOK);
+console.log("hook", WEEBHOOK);
 
 // The filename is the first invocation argument
 const inputFile = Deno.args[0];
