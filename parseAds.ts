@@ -2,32 +2,16 @@ import type { FinnAd } from "./types.ts";
 
 import { postToWebhook } from "./functions.ts";
 
-import { config as loadEnv } from "https://deno.land/std/dotenv/mod.ts";
-
-import {
-  readJSON,
-  writeJSON,
-  // removeFile,
-} from "https://deno.land/x/flat@0.0.15/mod.ts";
+import { readJSON, writeJSON } from "https://deno.land/x/flat@0.0.15/mod.ts";
 
 import * as R from "https://x.nest.land/ramda@0.27.2/mod.ts";
-
-const configData = await loadEnv({
-  export: true,
-  allowEmptyValues: true,
-});
 
 let WEEBHOOK = "";
 let inputFile;
 
-if (Deno.args[1]) {
-  // running on github with webhook passed as param from actions
-  WEEBHOOK = Deno.args[0];
-  inputFile = Deno.args[1];
-} else {
-  WEEBHOOK = configData.WEBHOOK_URL;
-  inputFile = Deno.args[0];
-}
+// running on github with webhook url passed as param from actions
+WEEBHOOK = Deno.args[0];
+inputFile = Deno.args[1];
 
 const outputFile = `filtered_${inputFile}`;
 const inputData = await readJSON(inputFile);
