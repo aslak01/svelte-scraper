@@ -1,6 +1,7 @@
 export interface FinnAd {
   "type": string;
   "ad_id": number;
+  "id": string;
   "main_search_key": string;
   "heading": string;
   "location": string;
