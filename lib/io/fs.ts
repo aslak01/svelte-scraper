@@ -1,7 +1,6 @@
 import { join } from "../imports.ts";
 
-export async function readInputFile(fileName: string) {
-  const inputFile = join("data/tmp/", fileName);
+export async function readInputFile(inputFile: string) {
   const inputFileInfo = await Deno.stat(inputFile);
 
   if (inputFileInfo.isFile !== true) {

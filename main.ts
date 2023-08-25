@@ -1,5 +1,4 @@
 import { join } from "./lib/imports.ts";
-import { adFilter } from "./lib/filters.ts";
 import * as io from "./lib/io/index.ts";
 
 async function main() {
@@ -12,32 +11,66 @@ async function main() {
     return;
   }
 
-  const inputFileName = Deno.args[0];
-  const webhookPath = Deno.args[1];
-  const outputFile = "./out/data.csv";
-  const prevFetchFile = "./data/prev/data.json";
-
-  if (inputFileName === undefined) {
-    console.error(inputFileName, "not recognised");
+  if (Deno.args.length > 3) {
+    console.error(
+      "Too many input parameters provided. Please provide only 2 or 3.",
+    );
+    return;
   }
 
-  const fetchedData = await io.readInputFile(Deno.args[0]);
-  const prevFetchData = await io.readInputFile(prevFetchFile);
+  const inputFileName = Deno.args[0];
 
-  const inputFile = join("./data/tmp/", inputFileName);
+  if (!inputFileName || inputFileName === undefined) {
+    console.error(inputFileName, "not recognised");
+  }
+  const inputFilePath = "./data/tmp/";
+  const inputFile = join(inputFilePath, inputFileName);
 
-  // const processedFileData = await io.getFileData(inputFile, adFilter);
+  const inputFileInfo = await Deno.stat(inputFile);
 
-  await io.writeToCSV(processedFileData, outputFile);
+  if (inputFileInfo.isFile !== true) {
+    console.error(
+      `The provided file "${inputFileName}" is not valid.`,
+    );
+    return;
+  }
+
+  const webhookPath = Deno.args[1];
+
+  if (!webhookPath || typeof webhookPath !== "string") {
+    console.error("The provided webhook path could not be parsed");
+    return;
+  }
+
+  const outputFile = "./out/data.csv";
+
+  let inputLines = 0;
+
+  if (Deno.args.length === 3) {
+    console.info("INITIALISING THE CSV");
+    inputLines = await io.initCSVfromJson(inputFile, outputFile);
+  } else {
+    console.log("Performing routine");
+    const prevFetchFilePath = "./data/prev/";
+    const prevFetchFile = join(prevFetchFilePath, "data.json");
+
+    const files = {
+      inputFile,
+      prevFetchFile,
+      prevFetchFilePath,
+      outputFile,
+    };
+
+    inputLines = await io.processAds(
+      files,
+      webhookPath,
+    );
+  }
 
   const finish = performance.now();
   const delta = finish - start;
 
-  console.log(`Processed ${processedFileData.length} lines in ${delta} ms`);
+  console.log(`Processed ${inputLines} lines in ${delta} ms`);
 }
 
-try {
-  await main();
-} catch (err) {
-  console.error(err);
-}
+await main();

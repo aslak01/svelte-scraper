@@ -1,5 +1,5 @@
 import { CsvStringifyStream, readableStreamFromIterable } from "../imports.ts";
-import { MassagedAndFilteredFinnJobAd } from "../types.ts";
+import { FinnJobAd, MassagedAndFilteredFinnJobAd } from "../types.ts";
 
 export async function writeToCSV(
   data: MassagedAndFilteredFinnJobAd[],
@@ -15,6 +15,11 @@ export async function writeToCSV(
 
   await readable.pipeThrough(new CsvStringifyStream({ columns: headers }))
     .pipeThrough(new TextEncoderStream()).pipeTo(f.writable);
+}
 
-  f.close();
+export async function writeJson(
+  data: FinnJobAd[],
+  outfile: string,
+) {
+  await Deno.writeTextFile(outfile, JSON.stringify(data));
 }

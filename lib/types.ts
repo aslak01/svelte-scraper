@@ -60,6 +60,8 @@ export type JobAdNotSaleAd = {
 
 export type FinnJobAd = FinnAdBase & JobAdNotSaleAd;
 
+export type FetchedFinnJobAds = { docs: FinnJobAd[] };
+
 export type AFinnAd = FinnAd | FinnJobAd;
 
 export type FilteredFinnAd = Pick<
