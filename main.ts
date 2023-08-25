@@ -56,6 +56,7 @@ async function main() {
 
     const files = {
       inputFile,
+      inputFilePath,
       prevFetchFile,
       prevFetchFilePath,
       outputFile,

@@ -9,6 +9,7 @@ export * from "./csv.ts";
 
 type FileReferences = {
   inputFile: string;
+  inputFilePath: string;
   prevFetchFile: string;
   prevFetchFilePath: string;
   outputFile: string;
@@ -18,7 +19,13 @@ export async function processAds(
   files: FileReferences,
   webhookPath: string,
 ): Promise<number> {
-  const { inputFile, prevFetchFile, prevFetchFilePath, outputFile } = files;
+  const {
+    inputFile,
+    inputFilePath,
+    prevFetchFile,
+    prevFetchFilePath,
+    outputFile,
+  } = files;
   const fetchedData = await readInputFile(inputFile);
   const prevFetchData = await readInputFile(prevFetchFile);
 
@@ -27,11 +34,11 @@ export async function processAds(
   if (!newAds || !newAds.length || newAds.length < 1) {
     console.log("No new ads");
     // TODO: Reenable this after checked that it's working
-    // await emptyDir(inputFilePath);
+    await emptyDir(inputFilePath);
     console.log("cleared most recent fetch");
-    // // await emptyDir(prevFetchFilePath);
-    // await Deno.writeTextFile(prevFetchFile, fetchedData.docs);
-    // console.log("Wrote found entries to previous fetch file");
+    await emptyDir(prevFetchFilePath);
+    await Deno.writeTextFile(prevFetchFile, fetchedData.docs);
+    console.log("Wrote found entries to previous fetch file");
   }
 
   await emptyDir(prevFetchFilePath);
@@ -55,7 +62,7 @@ export async function initCSVfromJson(
 
   const processedFileData = fetchedData.ads.map(adFilter);
 
-  await writeToCSV(processedFileData, outputFile);
+  await writeToCSV(processedFileData, outputFile, true);
 
   return fetchedData.ads.length;
 }

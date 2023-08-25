@@ -4,16 +4,22 @@ import { FinnJobAd, MassagedAndFilteredFinnJobAd } from "../types.ts";
 export async function writeToCSV(
   data: MassagedAndFilteredFinnJobAd[],
   outfile: string,
+  useHeaders = false,
 ) {
-  const headers = Object.keys(data[0]);
-
   const f = await Deno.open(outfile, {
     write: true,
   });
 
   const readable = readableStreamFromIterable(data);
 
-  await readable.pipeThrough(new CsvStringifyStream({ columns: headers }))
+  let opts;
+
+  if (useHeaders) {
+    const columns = Object.keys(data[0]);
+    opts = { columns };
+  }
+
+  await readable.pipeThrough(new CsvStringifyStream(opts))
     .pipeThrough(new TextEncoderStream()).pipeTo(f.writable);
 }
 
