@@ -1,5 +1,3 @@
-import { join } from "../imports.ts";
-
 export async function readInputFile(inputFile: string) {
   const inputFileInfo = await Deno.stat(inputFile);
 
