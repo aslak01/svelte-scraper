@@ -14,9 +14,9 @@ const existingIds = new Set(currData.ads.map((i: FinnAd) => i.ad_id));
 
 const newAds = inputAds.filter((i: FinnAd) => !existingIds.has(i.ad_id));
 
-newAds.forEach((ad: FinnAd) => {
+for (const ad of newAds) {
   currData.ads.push(ad);
-  postToWebhook(ad, WEEBHOOK);
-});
+  await postToWebhook(ad, WEEBHOOK);
+}
 
-await Deno.writeTextFile(outputFile, JSON.stringify(currData));
+await Deno.writeTextFile(outputFile, JSON.stringify(currData, null, 2));

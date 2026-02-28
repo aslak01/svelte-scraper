@@ -23,8 +23,8 @@ export interface FinnAd {
   "company_name": string;
   "no_of_positions": number;
   "image": {
-    "url": number;
-    "path": number;
+    "url": string;
+    "path": string;
   };
   "ad_link": string;
 }
