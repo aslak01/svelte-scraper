@@ -5017,6 +5017,58 @@
         "url": "https://images.finncdn.no/dynamic/default/item/452388533/c812e8ec-2736-427a-8529-3df5059df5c8",
         "path": "https://images.finncdn.no/dynamic/default/item/452388533/c812e8ec-2736-427a-8529-3df5059df5c8"
       }
+    },
+    {
+      "type": "job",
+      "id": "455248157",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Bli med på laget som systemutvikler itslearning!",
+      "location": "Bergen",
+      "flags": [],
+      "timestamp": 1773408689000,
+      "coordinates": {
+        "lat": 60.37305,
+        "lon": 5.34061,
+        "accuracy": 9
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/455248157",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "463",
+            "464"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/object/1935853731/iad_4269495646216658576its_logo_jpeg.png",
+        "path": "https://images.finncdn.no/dynamic/default/logo/object/1935853731/iad_4269495646216658576its_logo_jpeg.png"
+      },
+      "job_title": "Systemutvikler",
+      "published": 1773408689000,
+      "company_name": "itslearning AS",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Vestland",
+        "Bergen"
+      ],
+      "ad_id": 455248157,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/object/1935853731/iad_4269495646216658576its_logo_jpeg.png",
+        "path": "https://images.finncdn.no/dynamic/default/logo/object/1935853731/iad_4269495646216658576its_logo_jpeg.png"
+      }
     }
   ]
 }
