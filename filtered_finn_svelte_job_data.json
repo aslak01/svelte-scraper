@@ -5069,6 +5069,51 @@
         "url": "https://images.finncdn.no/dynamic/default/logo/object/1935853731/iad_4269495646216658576its_logo_jpeg.png",
         "path": "https://images.finncdn.no/dynamic/default/logo/object/1935853731/iad_4269495646216658576its_logo_jpeg.png"
       }
+    },
+    {
+      "type": "job",
+      "id": "457566933",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Vil du jobbe med moderne teknologi og utvikle brukervennlige tjenester for både innbyggere og virksomheter?",
+      "location": "Oslo",
+      "flags": [],
+      "timestamp": 1774622191000,
+      "coordinates": {
+        "lat": 59.92222,
+        "lon": 10.7359,
+        "accuracy": 5
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/457566933",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/19219446/20231208/12e0a827-7e93-42e3-ab58-85a23c6727a6",
+        "path": "https://images.finncdn.no/dynamic/default/logo/19219446/20231208/12e0a827-7e93-42e3-ab58-85a23c6727a6"
+      },
+      "job_title": "Senior fullstackutvikler til mattilsynet.no",
+      "deadline": 1776463199999,
+      "published": 1774622191000,
+      "company_name": "Mattilsynet",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Oslo",
+        "St.Hanshaugen - Ullevål"
+      ],
+      "ad_id": 457566933,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/19219446/20231208/12e0a827-7e93-42e3-ab58-85a23c6727a6",
+        "path": "https://images.finncdn.no/dynamic/default/logo/19219446/20231208/12e0a827-7e93-42e3-ab58-85a23c6727a6"
+      }
     }
   ]
 }
