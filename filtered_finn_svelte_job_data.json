@@ -5114,6 +5114,58 @@
         "url": "https://images.finncdn.no/dynamic/default/logo/19219446/20231208/12e0a827-7e93-42e3-ab58-85a23c6727a6",
         "path": "https://images.finncdn.no/dynamic/default/logo/19219446/20231208/12e0a827-7e93-42e3-ab58-85a23c6727a6"
       }
+    },
+    {
+      "type": "job",
+      "id": "457621001",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Vil du ta det neste steget i et selskap i stor vekst?",
+      "location": "Trondheim",
+      "flags": [],
+      "timestamp": 1774679029000,
+      "coordinates": {
+        "lat": 63.435,
+        "lon": 10.3997,
+        "accuracy": 5
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/457621001",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "463"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/1850126/20250725/5f5e4596-ced2-4034-bcef-e9c8d82d0e67",
+        "path": "https://images.finncdn.no/dynamic/default/logo/1850126/20250725/5f5e4596-ced2-4034-bcef-e9c8d82d0e67"
+      },
+      "job_title": "Fullstack/Frontend Developer",
+      "deadline": 1776981599999,
+      "published": 1774679029000,
+      "company_name": "Moen Marin AS",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Trøndelag",
+        "Trondheim"
+      ],
+      "ad_id": 457621001,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/1850126/20250725/5f5e4596-ced2-4034-bcef-e9c8d82d0e67",
+        "path": "https://images.finncdn.no/dynamic/default/logo/1850126/20250725/5f5e4596-ced2-4034-bcef-e9c8d82d0e67"
+      }
     }
   ]
 }
