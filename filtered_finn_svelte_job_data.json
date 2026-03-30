@@ -5166,6 +5166,59 @@
         "url": "https://images.finncdn.no/dynamic/default/logo/1850126/20250725/5f5e4596-ced2-4034-bcef-e9c8d82d0e67",
         "path": "https://images.finncdn.no/dynamic/default/logo/1850126/20250725/5f5e4596-ced2-4034-bcef-e9c8d82d0e67"
       }
+    },
+    {
+      "type": "job",
+      "id": "457915513",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Bouvet Agder søker erfaren utvikler",
+      "location": "Kristiansand S",
+      "flags": [],
+      "timestamp": 1774872751000,
+      "coordinates": {
+        "lat": 58.16187,
+        "lon": 7.99648,
+        "accuracy": 5
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/457915513",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "463",
+            "464"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/item/457915513/763f4153-0cde-474d-b028-9e7041ce59ca",
+        "path": "https://images.finncdn.no/dynamic/default/item/457915513/763f4153-0cde-474d-b028-9e7041ce59ca"
+      },
+      "job_title": "Utvikler",
+      "deadline": 1777845599999,
+      "published": 1774872751000,
+      "company_name": "BOUVET NORGE AS",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Agder",
+        "Kristiansand"
+      ],
+      "ad_id": 457915513,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/item/457915513/763f4153-0cde-474d-b028-9e7041ce59ca",
+        "path": "https://images.finncdn.no/dynamic/default/item/457915513/763f4153-0cde-474d-b028-9e7041ce59ca"
+      }
     }
   ]
 }
