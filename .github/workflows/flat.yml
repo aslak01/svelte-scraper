@@ -31,6 +31,6 @@ jobs:
         env: 
           WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
         with:
-          http_url: https://www.finn.no/api/search-qf?q=svelte&searchkey=SEARCH_ID_JOB_FULLTIME&vertical=bap
+          http_url: https://www.finn.no/job/job-search-page/api/search/SEARCH_ID_JOB_FULLTIME?q=svelte
           downloaded_filename: finn_svelte_job_data.json
           postprocess: parseAds.ts ${{ secrets.WEBHOOK_URL }}
