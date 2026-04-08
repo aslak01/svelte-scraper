@@ -5219,6 +5219,59 @@
         "url": "https://images.finncdn.no/dynamic/default/item/457915513/763f4153-0cde-474d-b028-9e7041ce59ca",
         "path": "https://images.finncdn.no/dynamic/default/item/457915513/763f4153-0cde-474d-b028-9e7041ce59ca"
       }
+    },
+    {
+      "type": "job",
+      "id": "458313461",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Vi søker flere seniorutviklere for våre kunder i Bergen!",
+      "location": "Bergen",
+      "flags": [],
+      "timestamp": 1775150719685,
+      "coordinates": {
+        "lat": 60.39844,
+        "lon": 5.32562,
+        "accuracy": 5
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/458313461",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457",
+            "458"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "463"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/item/458313461/f407552a-2721-4217-92ec-90a295db94ca",
+        "path": "https://images.finncdn.no/dynamic/default/item/458313461/f407552a-2721-4217-92ec-90a295db94ca"
+      },
+      "job_title": "Utviklere, tech-leads og løsningsarkitekter",
+      "deadline": 1778795999999,
+      "published": 1775150719685,
+      "company_name": "Folk AS",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Vestland",
+        "Bergen"
+      ],
+      "ad_id": 458313461,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/item/458313461/f407552a-2721-4217-92ec-90a295db94ca",
+        "path": "https://images.finncdn.no/dynamic/default/item/458313461/f407552a-2721-4217-92ec-90a295db94ca"
+      }
     }
   ]
 }
