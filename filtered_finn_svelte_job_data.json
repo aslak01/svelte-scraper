@@ -5272,6 +5272,59 @@
         "url": "https://images.finncdn.no/dynamic/default/item/458313461/f407552a-2721-4217-92ec-90a295db94ca",
         "path": "https://images.finncdn.no/dynamic/default/item/458313461/f407552a-2721-4217-92ec-90a295db94ca"
       }
+    },
+    {
+      "type": "job",
+      "id": "459739971",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Bruk dine evner innen koding, analyse og KI til å forklare og sette samfunnsspørsmål på agendaen.",
+      "location": "Oslo",
+      "flags": [],
+      "timestamp": 1776071999000,
+      "coordinates": {
+        "lat": 59.916,
+        "lon": 10.74309,
+        "accuracy": 5
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/459739971",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457",
+            "455",
+            "456"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "464"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/item/459739971/2c917f78-0343-4f98-96e9-826055717945",
+        "path": "https://images.finncdn.no/dynamic/default/item/459739971/2c917f78-0343-4f98-96e9-826055717945"
+      },
+      "job_title": "Datajournalist i Aftenposten",
+      "published": 1776071999000,
+      "company_name": "Schibsted",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Oslo",
+        "Sentrum"
+      ],
+      "ad_id": 459739971,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/item/459739971/2c917f78-0343-4f98-96e9-826055717945",
+        "path": "https://images.finncdn.no/dynamic/default/item/459739971/2c917f78-0343-4f98-96e9-826055717945"
+      }
     }
   ]
 }
