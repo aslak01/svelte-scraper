@@ -5325,6 +5325,65 @@
         "url": "https://images.finncdn.no/dynamic/default/item/459739971/2c917f78-0343-4f98-96e9-826055717945",
         "path": "https://images.finncdn.no/dynamic/default/item/459739971/2c917f78-0343-4f98-96e9-826055717945"
       }
+    },
+    {
+      "type": "job",
+      "id": "459308834",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Utvikler - Vil du være med å bygge fremtidens økonomisystem?",
+      "location": "Bergen",
+      "flags": [
+        "job-easy-apply"
+      ],
+      "timestamp": 1776084512000,
+      "coordinates": {
+        "lat": 60.37728,
+        "lon": 5.33374,
+        "accuracy": 9
+      },
+      "ad_type": 40,
+      "labels": [
+        {
+          "id": "job_easy_apply",
+          "text": "Enkel søknad",
+          "type": "PRIMARY"
+        }
+      ],
+      "canonical_url": "https://www.finn.no/job/ad/459308834",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "464"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/item/459308834/53336524-4669-428f-8ff7-2273cb8c98a8",
+        "path": "https://images.finncdn.no/dynamic/default/item/459308834/53336524-4669-428f-8ff7-2273cb8c98a8"
+      },
+      "job_title": "Programvareutvikler - Senior Software Developer",
+      "published": 1776084512000,
+      "company_name": "Uni Micro AS",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Vestland",
+        "Bergen"
+      ],
+      "ad_id": 459308834,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/item/459308834/53336524-4669-428f-8ff7-2273cb8c98a8",
+        "path": "https://images.finncdn.no/dynamic/default/item/459308834/53336524-4669-428f-8ff7-2273cb8c98a8"
+      }
     }
   ]
 }
