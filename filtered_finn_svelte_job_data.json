@@ -5491,6 +5491,58 @@
         "url": "https://images.finncdn.no/dynamic/default/item/459903504/0c15bb28-8636-4f17-a61b-1749e5d871f0",
         "path": "https://images.finncdn.no/dynamic/default/item/459903504/0c15bb28-8636-4f17-a61b-1749e5d871f0"
       }
+    },
+    {
+      "type": "job",
+      "id": "463443316",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Are you ready to join the resource revolution?",
+      "location": "Asker",
+      "flags": [],
+      "timestamp": 1778656854000,
+      "coordinates": {
+        "lat": 59.81621,
+        "lon": 10.37432,
+        "accuracy": 5
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/463443316",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "456"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "464"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/item/463443316/7c3834a0-bb5f-428a-9eeb-b0aafa701a2c",
+        "path": "https://images.finncdn.no/dynamic/default/item/463443316/7c3834a0-bb5f-428a-9eeb-b0aafa701a2c"
+      },
+      "job_title": "Jr. Software Engineer",
+      "deadline": 1780264799999,
+      "published": 1778656854000,
+      "company_name": "Tomra",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Akershus",
+        "Asker"
+      ],
+      "ad_id": 463443316,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/item/463443316/7c3834a0-bb5f-428a-9eeb-b0aafa701a2c",
+        "path": "https://images.finncdn.no/dynamic/default/item/463443316/7c3834a0-bb5f-428a-9eeb-b0aafa701a2c"
+      }
     }
   ]
 }
