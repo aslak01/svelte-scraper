@@ -5543,6 +5543,58 @@
         "url": "https://images.finncdn.no/dynamic/default/item/463443316/7c3834a0-bb5f-428a-9eeb-b0aafa701a2c",
         "path": "https://images.finncdn.no/dynamic/default/item/463443316/7c3834a0-bb5f-428a-9eeb-b0aafa701a2c"
       }
+    },
+    {
+      "type": "job",
+      "id": "466667861",
+      "main_search_key": "SEARCH_ID_JOB_FULLTIME",
+      "heading": "Vi bygger DNBs interne AI-plattform - og trenger deg!",
+      "location": "Oslo",
+      "flags": [],
+      "timestamp": 1781177849000,
+      "coordinates": {
+        "lat": 59.90759,
+        "lon": 10.76007,
+        "accuracy": 9
+      },
+      "ad_type": 40,
+      "labels": [],
+      "canonical_url": "https://www.finn.no/job/ad/466667861",
+      "extras": [
+        {
+          "id": "work_experience",
+          "label": "Arbeidserfaring",
+          "values": [
+            "457"
+          ]
+        },
+        {
+          "id": "education",
+          "label": "Utdanning",
+          "values": [
+            "464"
+          ]
+        }
+      ],
+      "logo": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/1382633385/20211028/41005faf-9a51-4464-9217-e85cf8ef75b6",
+        "path": "https://images.finncdn.no/dynamic/default/logo/1382633385/20211028/41005faf-9a51-4464-9217-e85cf8ef75b6"
+      },
+      "job_title": "Platform Engineer Radical AI",
+      "deadline": 1783288799999,
+      "published": 1781177849000,
+      "company_name": "DNB Bank ASA",
+      "no_of_positions": 1,
+      "locations": [
+        "Norge",
+        "Oslo",
+        "Gamle Oslo"
+      ],
+      "ad_id": 466667861,
+      "image": {
+        "url": "https://images.finncdn.no/dynamic/default/logo/1382633385/20211028/41005faf-9a51-4464-9217-e85cf8ef75b6",
+        "path": "https://images.finncdn.no/dynamic/default/logo/1382633385/20211028/41005faf-9a51-4464-9217-e85cf8ef75b6"
+      }
     }
   ]
 }
